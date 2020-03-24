@@ -1,0 +1,81 @@
+/* fonts */
+@font-face {
+    font-family: 'Futura Condensed';
+    src: url('../../assets/fonts/FuturaCondensed.ttf');
+}
+
+@font-face {
+    font-family: 'MinionPro';
+    src: url('../../assets/fonts/MinionProRegular.otf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/OpenSans.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../../assets/fonts/OpenSansRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../../assets/fonts/OpenSansBold.ttf');
+}
+/* fonts END */
+
+
+
+/* utility */
+
+body{
+    margin: 0;
+    white-space: nowrap;
+}
+.content {
+    width: 100%;
+}
+
+/* utility END */
+
+/* reusable */
+.button{
+    font-family: 'Futura Condensed', sans-serif;
+    vertical-align: baseline;
+    border: 0 none;
+    outline: 0 none;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    cursor: pointer;
+    background-color: #282828;
+    padding: 12px;
+    width: auto;
+    height: 43px;
+    border: 1px black solid;
+}
+.button:hover{
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+}
+.button_bg-red{
+    background-color: red;
+    color: white;
+    border: 1px red solid;
+}
+.button_bg-red:hover{
+    border: 1px red solid;
+    background-color: white;
+    color: red;
+}
+.push{
+    margin-left: auto;
+}
+/* reusable END */

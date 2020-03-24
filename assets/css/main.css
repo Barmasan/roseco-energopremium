@@ -1,0 +1,88 @@
+
+
+
+
+
+.main-page .header {
+    height: 100px;
+    background-color: #E9E9E9;
+    font-family: 'Open Sans Bold', sans-serif;
+}
+
+
+.main-page .header .logo {
+    width: 126px;
+    height: 43px;
+    background-image: url('../img/logo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.main-page .header .info {
+}
+.main-page .header .info .phone {
+    position: relative;
+}
+.main-page .header .info .phone a {
+    text-decoration: none;
+    color: black;
+}
+.main-page .header .info .phone::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: -22px;
+    background-image: url('../img/icons/icons8-phone-50.png');
+    background-size: 100%;
+}
+.main-page .header .info .time {
+    position: relative;
+}
+.main-page .header .info .time::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    left: -22px;
+    background-image: url('../img/icons/icons8-clock-100.png');
+    background-size: 100%;
+}
+
+.main-page .header .email {
+    position: relative;
+}
+.main-page .header .email a {
+    text-decoration: none;
+    color: black;
+}
+.main-page .header .email::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 19px;
+    top: 2px;
+    left: -30px;
+    background-image: url(../img/icons/icons8-envelope-100.png);
+    background-size: 100%
+}
+@media (max-width: 768px){
+    .main-page .header {
+        height: 300px;
+    }
+    .main-page .header .logo{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .main-page .header .info{
+        margin-bottom: 15px;
+    }
+    .main-page .header * {
+        margin-bottom: 10px;
+    }
+    .main-page .header .button{
+        width: 100%;
+    }
+                         
+}
