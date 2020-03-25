@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
     <!-- bootstrap END -->
 
+    <!-- problematic fonts -->
+    <link href='../assets/fonts/FuturaCondensedNormal/FuturaCondensedNormal.ttf' rel='stylesheet' type='text/css'>
+    <!-- problematic fonts END -->
+
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body class="main-page">
-    <header class="header container-fluid">
-        <div class="container h-100">
+    <!-- header and nav -->
+    <header class="header p-0 container-fluid">
+        <div class="container p-0 h-100">
             <div class="content h-100 d-flex flex-column flex-md-row justify-content-start align-items-center">
                 <div class="logo"></div>
                 <div class="info ml-md-5">
@@ -28,14 +33,81 @@
             </div>
         </div>
     </header>
-    <nav class="navigation">
-        <div class="container">
-            <div class="content">
-                1
+    <nav class="navigation p-0 container-fluid">
+        <div class="container p-0 h-100">
+            <div class="content h-100 d-none d-md-flex justify-content-between align-items-center">
+                <div class="item">
+                    <a href="" class="">главная</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class=""><div class="triangle"></div>услуги</a>
+
+                </div>
+                <div class="item active">
+                    <a href="" class="">наши проекты</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class="">отзывы</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class="">новости</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class="">о компании</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class="">контакты</a>
+
+                </div>
+
+            </div>
+            <div class="content h-100 d-flex d-md-none flex-column flex-md-row justify-content-center">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    
+                    <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                    <ul id="menu">
+                      <a href="#"><li>главная</li></a>
+                      <a href="#"><li>услуги</li></a>
+                      <a href="#"><li>наши проекты</li></a>
+                      <a href="#"><li>отзывы</li></a>
+                      <a href="#"><li>новости</li></a>
+                      <a href="#"><li>о компании</li></a>
+                      <a href="#"><li>контакты</li></a>
+                    </ul>
+                  </div>
             </div>
         </div>
     </nav>
-    <section class="first-screen"></section>
+    <!-- header and nav END -->
+
+    <section class="first-screen p-0 container-fluid">
+        <div class="container p-0 h-100">
+            
+        </div>
+    </section>
     <section class="top-5"></section>
     <section class="expirience"></section>
     <section class="types-of-work"></section>
