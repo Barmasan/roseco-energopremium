@@ -1,10 +1,10 @@
 /* fonts */
-@font-face {
+/* @font-face {
     font-family: 'Futura Condensed';
-    src: url('../fonts/FuturaCondensed.ttf');
-}
+    src: url('FuturaCondensedNormal.ttf');
+} */
 
-@font-face {
+/* @font-face {
     font-family: "FuturaCondensedNormal";
     src: url("../fonts/FuturaCondensedNormal/FuturaCondensedNormal.eot");
     src: url("../fonts/FuturaCondensedNormal/FuturaCondensedNormal.eot?#iefix")format("embedded-opentype"),
@@ -12,7 +12,22 @@
     url("../fonts/FuturaCondensedNormal/FuturaCondensedNormal.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
+} */
+@font-face {
+	font-family: 'CUSTOM';
+	src: url('../Futura_Condensed.eot');
+    src: url('../Futura_Condensed.eot') format('embedded-opentype')
+    url('../Futura_Condensed.woff') format('woff'), 
+    url('../Futura_Condensed.ttf') format('truetype'), 
+    url('../Futura_Condensed.svg#Futura_Condensed') format('svg');
+
 }
+h1{
+    font-family: "CUSTOM" !important;
+    color: red;
+}
+
+
 @font-face {
     font-family: 'MinionPro';
     src: url('../../assets/fonts/MinionProRegular.otf');
@@ -210,7 +225,7 @@ body{
 .navigation .item a {
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Futura Condensed', sans-serif;
+    font-family: 'FuturaCondensedNormal', sans-serif;
     color: black;
     font-size: 14px;
 }
