@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "CUSTOM";
+	src: url('Futura_Condensed.eot');
+    src: url('Futura_Condensed.eot') format('embedded-opentype'),
+         url('Futura_Condensed.woff') format('woff'),
+         url('Futura_Condensed.ttf') format('truetype'),
+         url('Futura_Condensed.svg#Futura_Condensed') format('svg');
+}
+
+#shit__fonts{
+	font-family: "CUSTOM";
+	color:yellow;
+}
