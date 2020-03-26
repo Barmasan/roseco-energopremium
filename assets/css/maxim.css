@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
 	font-family: "CUSTOM";
 	src: url('Futura_Condensed.eot');
     src: url('Futura_Condensed.eot') format('embedded-opentype'),
@@ -7,7 +7,7 @@
          url('Futura_Condensed.svg#Futura_Condensed') format('svg');
 }
 
-#shit__fonts{
-	font-family: "CUSTOM";
-	color:yellow;
-}
+h1 {
+	font-family: "CUSTOM" !important;
+	color: red !important;
+} */
