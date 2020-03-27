@@ -19,11 +19,11 @@
 </head>
 <body class="main-page">
     <!-- header and nav -->
-    <header class="header p-0 container-fluid">
-        <div class="container p-0 h-100">
+    <header class="header container-fluid">
+        <div class="container h-100">
             <div class="content h-100 d-flex flex-column flex-md-row justify-content-start align-items-center">
                 <div class="logo"></div>
-                <div class="info ml-md-5">
+                <div class="info ml-md-5 d-flex d-md-block flex-column justify-content-center align-items-center">
                     <div class="phone"><a href="tel:+7-812-309-9498">+7 (812) 309-94-98</a></div>
                     <div class="time">Пн-Пт 09-18</div>
                     <div class="email ml-lg-5 d-block d-lg-none"><a href="mailto:info@enprem.com">info@enprem.com</a></div>
@@ -35,9 +35,9 @@
             </div>
         </div>
     </header>
-    <nav class="navigation p-0 container-fluid">
+    <nav class="navigation container-fluid">
         <div class="container p-0 h-100">
-            <div class="content h-100 d-none d-md-flex justify-content-between align-items-center">
+            <div class="content h-100 d-none d-md-flex justify-content-around align-items-center">
                 <div class="item">
                     <a href="" class="">главная</a>
 
@@ -70,26 +70,11 @@
             </div>
             <div class="content h-100 d-flex d-md-none flex-column flex-md-row justify-content-center">
                 <div id="menuToggle">
-                    <!--
-                    A fake / hidden checkbox is used as click reciever,
-                    so you can use the :checked selector on it.
-                    -->
+
                     <input type="checkbox" />
-                    
-                    <!--
-                    Some spans to act as a hamburger.
-                    
-                    They are acting like a real hamburger,
-                    not that McDonalds stuff.
-                    -->
                     <span></span>
                     <span></span>
                     <span></span>
-                    
-                    <!--
-                    Too bad the menu has to be inside of the button
-                    but hey, it's pure CSS magic.
-                    -->
                     <ul id="menu">
                       <a href="#"><li>главная</li></a>
                       <a href="#"><li>услуги</li></a>
@@ -103,11 +88,19 @@
             </div>
         </div>
     </nav>
-    <!-- header and nav END -->
 
     <section class="first-screen p-0 container-fluid">
-        <div class="container p-0 h-100">
-            <H1 class='shit__fonts'>Hello world!</H1>
+        <div class="text-side"></div>
+        <div class="image-side">
+            <h1 class="h1 d-lg-none d-block">Строительство  трансформаторных  подстанций</h1>
+        </div>
+        <div class="container inner h-100">
+            <h1 class="h1 d-none d-lg-block">Строительство  трансформаторных  подстанций</h1>
+            <p class="p">- строительство и реконструкция подстанций и линейных объектов<br>
+                - напряжением от 0,4 кВ до 110 кВ. <br>
+                - проектирование и монтаж внутренних и наружных систем<br>
+                 энергоснабжения производственных и общественно-деловых зданий.</p>
+            <button class="button button_bg-red">Заказать</button>
         </div>
     </section>
     <section class="top-5"></section>

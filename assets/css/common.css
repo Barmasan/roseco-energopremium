@@ -80,7 +80,7 @@ body{
     outline: 0 none;
     box-sizing: border-box;
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
     white-space: nowrap;
     text-align: center;
@@ -88,7 +88,7 @@ body{
     letter-spacing: .8px;
     cursor: pointer;
     background-color: #282828;
-    padding: 12px;
+    padding: 9px;
     width: auto;
     height: 43px;
     border: 1px black solid;
