@@ -119,14 +119,12 @@ body{
     height: 7px;
     margin: 0 4px 2px 0;
 }
+span.color-red{
+    color: red;
+}
 /* reusable END */
 
 /* header */
-
-
-
-
-
 .header {
     position: relative;
     height: 100px;
