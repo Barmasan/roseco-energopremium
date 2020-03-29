@@ -9,7 +9,7 @@ console.log($('.types-of-work .bottom-block').height());
 window.onresize = function(){
     
     if(window.innerWidth < 991){
-        $('.top-5').height($('.top-5 .right-side').height() + $('.top-5 .left-side').height());
+        $('.top-5').height($('.top-5 .right-side').height() + 450);
     } else{
         $('.top-5').height('1300');
     }

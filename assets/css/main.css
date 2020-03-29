@@ -373,14 +373,6 @@
     filter: brightness(0.4);
 
 }
-/* .types-of-work .inner .left-side{
-    width: 50%;
-}
-.types-of-work .inner .right-side{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-} */
 .types-of-work .custom-card{
     width: 311px;
     height: 481px;
@@ -446,3 +438,101 @@
 
 }
 /* types-of-work END */
+
+
+/* map */
+.map{
+    box-sizing: border-box;
+    border: 2px red solid;
+    position: relative;
+}
+.map #spb{
+    min-height:500px;
+    filter: grayscale(1);
+    transition:all 1s;
+}
+.map .overlay{
+    position: absolute;
+    z-index: 45000;
+    right: 0;
+    width: 400px;
+    background: white;
+    height: 100%;
+    padding:10px;
+}
+.map li{
+    text-align:left!important;
+}
+.map h3{
+    margin-top: 0.5rem;
+}
+.map .ymaps-2-1-75-inner-panes{
+    border-radius:16px;
+}
+.map .button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    font-size: 40px;
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 768px){
+    .map .button{
+        height: 50px;
+        font-size: 20px;
+    }
+}
+@media (min-width:250px) and (max-width:650px){
+    .map .overlay{
+        width:250px;
+    }
+    .map .ymaps-2-1-75-inner-panes{
+        border-radius:unset;
+    }
+}
+/* map END */
+
+/* form-block */
+.form-block{
+
+}
+.form-block .form-wrapper{
+    margin: 150px 0 150px;
+}
+.form-block .form-block{
+
+}
+.form-block .text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-block .text-top{
+    white-space: normal;
+    font-size: 35px;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}
+.form-block .text{
+    white-space: normal;
+    font-size: 35px;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}
+@media (max-width: 991px){
+    .form-block .text-top{
+        margin-top: 30px;
+    }
+    .form-block .form-wrapper{
+        margin-top: 30px;
+    }
+}
+/* form-block END */

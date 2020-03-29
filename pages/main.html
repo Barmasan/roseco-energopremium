@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +17,12 @@
 
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
 </head>
+
 <body class="main-page">
     <!-- header and nav -->
     <header class="header container-fluid">
@@ -30,9 +32,11 @@
                 <div class="info ml-md-5 d-flex d-md-block flex-column justify-content-center align-items-center">
                     <div class="phone"><a href="tel:+7-812-309-9498">+7 (812) 309-94-98</a></div>
                     <div class="time">Пн-Пт 09-18</div>
-                    <div class="email ml-lg-5 d-block d-lg-none"><a href="mailto:info@enprem.com">info@enprem.com</a></div>
+                    <div class="email ml-lg-5 d-block d-lg-none"><a href="mailto:info@enprem.com">info@enprem.com</a>
+                    </div>
                 </div>
-                <div class="email m0 ml-md-5 d-none d-lg-block"><a href="mailto:info@enprem.com">info@enprem.com</a></div>
+                <div class="email m0 ml-md-5 d-none d-lg-block"><a href="mailto:info@enprem.com">info@enprem.com</a>
+                </div>
                 <button class="button m0 button_bg-red ml-md-auto">Заказать звонок</button>
                 <button class="button ml-md-3">Калькулятор</button>
 
@@ -47,7 +51,9 @@
 
                 </div>
                 <div class="item">
-                    <a href="" class=""><div class="triangle"></div>услуги</a>
+                    <a href="" class="">
+                        <div class="triangle"></div>услуги
+                    </a>
 
                 </div>
                 <div class="item active">
@@ -80,15 +86,29 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                      <a href="#"><li>главная</li></a>
-                      <a href="#"><li>услуги</li></a>
-                      <a href="#"><li>наши проекты</li></a>
-                      <a href="#"><li>отзывы</li></a>
-                      <a href="#"><li>новости</li></a>
-                      <a href="#"><li>о компании</li></a>
-                      <a href="#"><li>контакты</li></a>
+                        <a href="#">
+                            <li>главная</li>
+                        </a>
+                        <a href="#">
+                            <li>услуги</li>
+                        </a>
+                        <a href="#">
+                            <li>наши проекты</li>
+                        </a>
+                        <a href="#">
+                            <li>отзывы</li>
+                        </a>
+                        <a href="#">
+                            <li>новости</li>
+                        </a>
+                        <a href="#">
+                            <li>о компании</li>
+                        </a>
+                        <a href="#">
+                            <li>контакты</li>
+                        </a>
                     </ul>
-                  </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -96,27 +116,27 @@
     <section class="first-screen p-0 container-fluid">
         <div class="text-side"></div>
         <div class="image-side">
-            <h1 class="h1 d-lg-none d-block">Строительство  трансформаторных  подстанций</h1>
+            <h1 class="h1 d-lg-none d-block">Строительство трансформаторных подстанций</h1>
         </div>
         <div class="container inner h-100">
-            <h1 class="h1 d-none d-lg-block">Строительство  трансформаторных  подстанций</h1>
+            <h1 class="h1 d-none d-lg-block">Строительство трансформаторных подстанций</h1>
             <p class="p">- строительство и реконструкция подстанций и линейных объектов<br>
                 - напряжением от 0,4 кВ до 110 кВ. <br>
                 - проектирование и монтаж внутренних и наружных систем<br>
-                 энергоснабжения производственных и общественно-деловых зданий.</p>
+                энергоснабжения производственных и общественно-деловых зданий.</p>
             <button class="button button_bg-red">Заказать</button>
         </div>
     </section>
     <!-- first-screen END -->
     <section class="top-5 p-0 container-fluid">
         <div class="gray-bg">
-            
+
         </div>
         <div class="image"></div>
         <div class="container d-flex flex-column flex-lg-row inner h-100">
             <div class="left-side w-">
-                <h1 class="h1"><span class="color-red">Топ-5</span> причин 
-                    воспользоваться 
+                <h1 class="h1"><span class="color-red">Топ-5</span> причин
+                    воспользоваться
                     услугами EnergoPremium</h1>
             </div>
             <div class="right-side d-flex flex-column flex-sm-row justify-content-center justify-content-lg-end">
@@ -139,7 +159,7 @@
                         <span class="number">2</span>
                         <span class="title">часа</span>
                         <span class="text">время
-                            рассчета стоимости 
+                            рассчета стоимости
                             и сроков
                             выполнения работ</span>
                     </div>
@@ -167,29 +187,32 @@
         <div class="container inner h-100">
             <div class="row">
                 <div class="col-12">
-                    <p class="p-top"><span class="color-red fs-45px">Опыт наших рабочих</span> позволяет быстро, качественно, аккуратно произвести монтаж оборудования ТП, при необходимости демонтаж, ремонт, реконструкцию и замену узлов и соединений. Осуществляем строительство и монтаж ТП 10 0.4 кВ, КТП, КТПН, монтаж ТП 35 кВ, распределительных пунктов. Для этого<br>
+                    <p class="p-top"><span class="color-red fs-45px">Опыт наших рабочих</span> позволяет быстро,
+                        качественно, аккуратно произвести монтаж оборудования ТП, при необходимости демонтаж, ремонт,
+                        реконструкцию и замену узлов и соединений. Осуществляем строительство и монтаж ТП 10 0.4 кВ,
+                        КТП, КТПН, монтаж ТП 35 кВ, распределительных пунктов. Для этого<br>
                         производим следующие работы:
-                        </p>
+                    </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <p class="p">- Монтаж оборудования (как из
-                        материалов заказчика, так и 
+                        материалов заказчика, так и
                         закупленного по его оборудованию)</p>
                     <p class="p">- Сервисное обслуживание</p>
                     <p class="p">- Модернизация существующих
                         подстанций</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <p class="p">- Устройство внешних электрических 
+                    <p class="p">- Устройство внешних электрических
                         сетей (включа кабельные, воздушные линии)</p>
                     <p class="p">-Техническое обследование ТП</p>
                     <p class="p">- Ввод в эксплуатацию</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <p class="p">- Все необходимые согласования
-                        проекта в органах власти, привязка 
+                        проекта в органах власти, привязка
                         объекта</p>
                     <p class="p">- Ввод в эксплуатацию</p>
                     <p class="p">- Проектирование и наладка
@@ -198,7 +221,8 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p class="p">- Весь перечень общестроительных работ, сопутствующих монтажу подстанции (проектирование, закупка и контроль качества
+                    <p class="p">- Весь перечень общестроительных работ, сопутствующих монтажу подстанции
+                        (проектирование, закупка и контроль качества
                         материалов, смета, монтаж ТП, демонтаж, пусконаладка)</p>
                 </div>
             </div>
@@ -213,7 +237,7 @@
         </div>
     </section>
     <section class="types-of-work p-0 container-fluid">
- 
+
         <div class="image-top d-block d-lg-none">
         </div>
 
@@ -224,12 +248,12 @@
             <div class="top-block">
                 <div class="row d-block d-lg-none">
                     <div class="col-12">
-                        <h1 class="h1">Какой вариант 
-                            <span class="color-red fs-45 text-uppercase">работ</span>   Вам нужен?</h1>
+                        <h1 class="h1">Какой вариант
+                            <span class="color-red fs-45 text-uppercase">работ</span> Вам нужен?</h1>
                     </div>
                 </div>
             </div>
-            
+
             <div class="bottom-block">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center justify-content-md-end">
@@ -263,8 +287,8 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
-                        <h1 class="h1">Какой вариант 
-                          <span class="color-red fs-45 text-uppercase">работ</span>   Вам нужен?</h1>
+                        <h1 class="h1">Какой вариант
+                            <span class="color-red fs-45 text-uppercase">работ</span> Вам нужен?</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -290,22 +314,135 @@
                                 монтаж<br>кабельных<br>линий
                             </span>
                             <span class="text">
-                                Полный 
+                                Полный
                                 комплекс работ по строительству кабельных линий
                                 ( 0,4- 6910) кВ
                             </span>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="map"></section>
-    <section class="form"></section>
-    <footer class="footer"></footer>
+    <section class="map">
+        <div class="container-fluid p-0">
+            <div id='spb'>
+
+            </div>
+            <div id="open-map-button" class="button button_bg-red">посмотреть карту проектов</div>
+        </div>
+
+    </section>
+    <section class="form-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-block d-lg-none">
+                    <p class="text-top">
+                        <span class="fs-45px">В</span>ам нужны
+                        электромонтажные работы<span class="fs-45px">?</span>
+                        <span class="fs-45px">Е</span>сть вопросы<span class="fs-45px">?</span> 
+                        <span class="fs-45px">Н</span>ужна консультация 
+                        специалиста<span class="fs-45px">?</span> 
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-wrapper col-12 col-lg-8">
+                    <div class="form d-flex flex-column">
+                        <div class="title"><span class="fs-60px">З</span>аполните простую форму</div>
+                        <div class="subtitle">И получите бесплатную консультацию специалиста</div>
+                        <input type="text" class="input" placeholder="Ваше Имя">
+                        <input type="text" class="input" placeholder="E-mail/ Номер телефона">
+                        <textarea name="" id="" cols="30" rows="5" class="textarea" placeholder="Ваше сообщение"></textarea>
+                        <button class="button button_bg-red">ОСТАВИТЬ ЗАЯВКУ</button>
+                    </div>
+                </div>
+                <div class="text-wrapper col-12 col-lg-4 d-none d-lg-flex">
+                    <p class="text">
+                        <span class="fs-45px">В</span>ам нужны<br>
+                        электромонтажные работы<span class="fs-45px">?</span><br>
+                        <span class="fs-45px">Е</span>сть вопросы<span class="fs-45px">?</span> <br>
+                        <span class="fs-45px">Н</span>ужна консультация <br>
+                        специалиста<span class="fs-45px">?</span> 
+                    </p>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid footer-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="block d-flex flex-column align-items-center align-items-md-start">
+                            <div class="title">подстанции:</div>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                        </div>
+                        <div class="block d-flex flex-column align-items-center align-items-md-start">
+                            <div class="title">соглашение:</div>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="block d-flex flex-column align-items-center align-items-md-start">
+                            <div class="title">мощности:</div>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                        </div>
+                        <div class="block d-flex flex-column align-items-center align-items-md-start">
+                            <div class="title">кабельные линии:</div>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center align-items-md-start">
+                        <div class="contacts d-flex flex-column">
+                            <div class="title">Контакты</div>
+                            <address class="text">Адрес<br>
+                                192102, Российская Федерация,<br>
+                                Санкт-Петербург,  ул. Фучика д. 4 лит. К,<br> оф. 405
+                            </address>
+                            <p class="text">
+                                Телефон/ факс<br>
+                                <a href="tel:+7-812-309-94-98">+7 812 309 94 98</a>
+                            </p>
+                            <p class="text">
+                                E-mail <br>
+                                <a href="mailto:info@enprem.com">info@enprem.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="social-media">
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <p class="bottom-text">2019 ©ЭнергоПремиуим</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <a href="" class="bottom-text"></a>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </footer>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/map.js"></script>
 </body>
+
 </html>
