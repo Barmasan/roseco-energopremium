@@ -16,6 +16,10 @@
 
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 </head>
 <body class="main-page">
     <!-- header and nav -->
@@ -106,16 +110,17 @@
     <!-- first-screen END -->
     <section class="top-5 p-0 container-fluid">
         <div class="gray-bg">
-            <div class="image"></div>
+            
         </div>
-        <div class="container inner h-100">
-            <div class="left-side">
+        <div class="image"></div>
+        <div class="container d-flex flex-column flex-lg-row inner h-100">
+            <div class="left-side w-">
                 <h1 class="h1"><span class="color-red">Топ-5</span> причин 
                     воспользоваться 
                     услугами EnergoPremium</h1>
             </div>
-            <div class="right-side">
-                <div class="column column-1">
+            <div class="right-side d-flex flex-column flex-sm-row justify-content-center justify-content-lg-end">
+                <div class="column d-flex flex-column align-items-center align-items-md-start column-1">
                     <div class="custom-card">
                         <span class="number">10</span>
                         <span class="title">Лет</span>
@@ -139,7 +144,7 @@
                             выполнения работ</span>
                     </div>
                 </div>
-                <div class="column column-2">
+                <div class="column d-flex flex-column align-items-center align-items-md-start column-2">
                     <div class="custom-card">
                         <span class="number">12</span>
                         <span class="title">видов</span>
@@ -155,16 +160,152 @@
                             области</span>
                     </div>
                 </div>
-                
             </div>
-            
-
         </div>
     </section>
-    <section class="expirience"></section>
-    <section class="types-of-work"></section>
+    <section class="expirience p-0 container-fluid">
+        <div class="container inner h-100">
+            <div class="row">
+                <div class="col-12">
+                    <p class="p-top"><span class="color-red fs-45px">Опыт наших рабочих</span> позволяет быстро, качественно, аккуратно произвести монтаж оборудования ТП, при необходимости демонтаж, ремонт, реконструкцию и замену узлов и соединений. Осуществляем строительство и монтаж ТП 10 0.4 кВ, КТП, КТПН, монтаж ТП 35 кВ, распределительных пунктов. Для этого<br>
+                        производим следующие работы:
+                        </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <p class="p">- Монтаж оборудования (как из
+                        материалов заказчика, так и 
+                        закупленного по его оборудованию)</p>
+                    <p class="p">- Сервисное обслуживание</p>
+                    <p class="p">- Модернизация существующих
+                        подстанций</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <p class="p">- Устройство внешних электрических 
+                        сетей (включа кабельные, воздушные линии)</p>
+                    <p class="p">-Техническое обследование ТП</p>
+                    <p class="p">- Ввод в эксплуатацию</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <p class="p">- Все необходимые согласования
+                        проекта в органах власти, привязка 
+                        объекта</p>
+                    <p class="p">- Ввод в эксплуатацию</p>
+                    <p class="p">- Проектирование и наладка
+                        автоматических систем управления</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="p">- Весь перечень общестроительных работ, сопутствующих монтажу подстанции (проектирование, закупка и контроль качества
+                        материалов, смета, монтаж ТП, демонтаж, пусконаладка)</p>
+                </div>
+            </div>
+            <div class="row buttons">
+                <div class="col-12 col-md-6 text-center">
+                    <button class="button button_bg-red">Услуги</button>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <button class="button">Проекты</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="types-of-work p-0 container-fluid">
+ 
+        <div class="image-top d-block d-lg-none">
+        </div>
+
+        <div class="gray-bg">
+            <div class="image d-none d-lg-block"></div>
+        </div>
+        <div class="container inner h-100">
+            <div class="top-block">
+                <div class="row d-block d-lg-none">
+                    <div class="col-12">
+                        <h1 class="h1">Какой вариант 
+                            <span class="color-red fs-45 text-uppercase">работ</span>   Вам нужен?</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bottom-block">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center justify-content-md-end">
+                        <div class="custom-card">
+                            <div class="icon icon-1"></div>
+                            <span class="title">
+                                энерго-<br>снабжение
+                            </span>
+                            <span class="text">
+                                Полный комплекс услуг:
+                                электроснабжение,
+                                освещение,
+                                автоматизаци,
+                                реконствукция электросетей
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center justify-content-md-start">
+                        <div class="custom-card">
+                            <div class="icon icon-2"></div>
+                            <span class="title">
+                                электро-<br>лаборатория
+                            </span>
+                            <span class="text">
+                                Работы
+                                по оформлению
+                                разрешительной
+                                документации для сдачи
+                                объектов в эксплуатацию
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                        <h1 class="h1">Какой вариант 
+                          <span class="color-red fs-45 text-uppercase">работ</span>   Вам нужен?</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center justify-content-md-end">
+                        <div class="custom-card">
+                            <div class="icon icon-3"></div>
+                            <span class="title">
+                                энерго-<br>снабжение
+                            </span>
+                            <span class="text">
+                                Полный комплекс услуг:
+                                электроснабжение,
+                                освещение,
+                                автоматизаци,
+                                реконствукция электросетей
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center justify-content-md-start">
+                        <div class="custom-card">
+                            <div class="icon icon-4"></div>
+                            <span class="title">
+                                монтаж<br>кабельных<br>линий
+                            </span>
+                            <span class="text">
+                                Полный 
+                                комплекс работ по строительству кабельных линий
+                                ( 0,4- 6910) кВ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="map"></section>
     <section class="form"></section>
     <footer class="footer"></footer>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

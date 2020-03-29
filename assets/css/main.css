@@ -142,8 +142,9 @@
     width: 60%;
     height: 100%;
     background-color: #EAEAEA;
+    z-index: -1;
 }
-.top-5 .gray-bg .image{
+.top-5 .image{
     width: 576px;
     height: 712px;
     margin-top: 413px;
@@ -198,6 +199,7 @@
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 50px;
+    box-shadow:  -2px 2px rgba(0, 0, 0, 0.5);
 }
 .top-5 .inner .right-side .custom-card .number{
     text-align: center;
@@ -217,4 +219,230 @@
     width: 120px;
     font-family: 'MinionPro';
 }
+@media (max-width: 576px){
+
+    .top-5 .inner .left-side{
+        width: 100%;
+    }
+    .top-5 .gray-bg .image{
+
+    }
+    .top-5 .inner .right-side{
+        width: 100%;
+    }
+    .top-5 .inner .right-side .column-1{
+        margin-right: 0;
+    }
+    .top-5 .inner .right-side .column-2{
+        margin-top: 0;
+    }
+    .top-5 .inner .right-side .custom-card{
+        margin-right: 0;
+    }
+}
+@media (max-width: 991px){
+    .top-5 .h1{
+        color: white;
+    }
+    .top-5 .inner .left-side{
+        width: 100%;
+    }
+    .top-5 .inner .right-side{
+        width: 100%;
+    }
+    .top-5  .image{
+        width: 100%;
+        height: 400px;
+        margin-top: 0;
+        background-size: cover;
+        background-position-y: 30%;
+        filter: brightness(0.4);
+    }
+
+    .top-5 .inner .right-side .custom-card{
+        margin-right: 0;
+    }
+}
 /* top-5 END */
+
+/* expirience */
+.expirience{
+    box-sizing: border-box;
+    border: 2px solid red;
+
+}
+.expirience .inner{
+
+}
+.expirience .inner .p-top{
+    white-space: normal;
+    margin-top: 100px;
+    font-size: 26px;
+    font-family: 'Futura', sans-serif;
+    line-height: 30px;
+}
+.expirience .inner .p{
+    white-space: normal;
+    margin-top: 50px;
+    font-size: 16px;
+    font-family: 'MinionPro', sans-serif;
+    line-height: 22px;
+}
+.expirience .button{
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    line-height: 23px;
+}
+.expirience .buttons{
+    margin: 100px 0 150px 0;
+}
+@media (max-width: 576px){
+    .expirience .inner .p-top{
+        margin-top: 60px;  
+    }
+    .expirience .buttons{
+        margin: 50px 0 0 0;
+    }
+
+}
+@media (max-width: 768px){
+
+    .expirience .buttons{
+        margin: 50px 0 50px;
+    }
+
+}
+/* expirience END */
+
+/* types-of-work */
+.types-of-work{
+
+}
+.types-of-work{
+    position: relative;
+    display: flex;
+    min-height: 1300px;
+}
+.types-of-work .gray-bg{
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #EAEAEA;
+    z-index: -2;
+}
+.types-of-work .gray-bg .image{
+    position: absolute;
+    right: 0;
+    width: 412px;
+    height: 563px;
+    margin-top: 356px;
+    background-size: cover;
+    background-position-x: 55%;
+    background-image: url(../../assets/img/main/expirience/expirience-1.png);
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+.types-of-work .inner{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 150px;
+}
+.types-of-work .h1{
+
+    max-width: 301px;
+    font-size: 54px;
+    font-family: 'Futura', sans-serif;
+    color: black;
+    white-space: normal;
+    line-height: 50px;
+    z-index: 99;
+}
+.types-of-work .image-top{
+    width: 100%;
+    height: 400px;
+    margin-top: 0;
+    background-size: cover;
+    background-position-x: 55%;
+    background-image: url(../../assets/img/main/expirience/expirience-1.png);
+    box-sizing: border-box;
+    border: 2px solid red;
+    filter: brightness(0.4);
+
+}
+/* .types-of-work .inner .left-side{
+    width: 50%;
+}
+.types-of-work .inner .right-side{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+} */
+.types-of-work .custom-card{
+    width: 311px;
+    height: 481px;
+    box-sizing: border-box;
+    border: 2px red solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    box-shadow:  -2px 2px rgba(0, 0, 0, 0.5);
+}
+.types-of-work .custom-card .icon{
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.types-of-work .custom-card .icon-1{
+    background-image: url(../../assets/img/main/expirience/1.png);
+}
+.types-of-work .custom-card .icon-2{
+    background-image: url(../../assets/img/main/expirience/2.png);
+}
+.types-of-work .custom-card .icon-3{
+    background-image: url(../../assets/img/main/expirience/3.png);
+}
+.types-of-work .custom-card .icon-4{
+    background-image: url(../../assets/img/main/expirience/4.png);
+}
+.types-of-work .custom-card .title{
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Open Sans Bold';
+    margin-top: 35px;
+
+}
+.types-of-work .custom-card .text{
+    text-align: center;
+    font-size: 16px;
+    white-space: normal;
+    width: 250px;
+    font-family: 'MinionPro';
+}
+
+@media (max-width: 991px){
+
+    .expirience .buttons{
+        margin: 50px 0 50px;
+    }
+    .types-of-work .h1{
+        margin-top: 150px;
+        margin-bottom: 200px;
+        color: white;
+    }
+    .types-of-work .inner{
+        padding-top: 0;
+    }
+
+}
+/* types-of-work END */

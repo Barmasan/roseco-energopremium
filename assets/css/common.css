@@ -122,6 +122,9 @@ body{
 span.color-red{
     color: red;
 }
+.fs-45px{
+    font-size: 45px;
+}
 /* reusable END */
 
 /* header */
