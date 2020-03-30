@@ -115,7 +115,6 @@
 .expirience .p{
     white-space: normal;
     font-size: 16px;
-    font-family: 'MinionPro', sans-serif;
     line-height: 25px;
     margin-bottom: 20px;
 }
@@ -168,7 +167,7 @@
     position: absolute;
     width: 60%;
     height: 100%;
-    background-color: #EAEAEA;
+    background-color: #dddcdc;
     z-index: -1;
     right: 0;
 }
@@ -235,14 +234,13 @@
     margin-top: 10px;
 }
 .stages-9 .inner .right-side .custom-card .title{
-    font-size: 26px;
+    color: rgba(255,43,43,0.5);
+    font-size: 40px;
     text-transform: uppercase;
-    margin-bottom: 20px;
 }
 .stages-9 .inner .right-side .custom-card .text{
     font-size: 16px;
     white-space: normal;
-    font-family: 'MinionPro';
 }
 @media (max-width: 576px){
 
@@ -309,7 +307,6 @@
 .expirience-2 .p{
     white-space: normal;
     font-size: 16px;
-    font-family: 'MinionPro', sans-serif;
     line-height: 25px;
     margin-bottom: 20px;
 }

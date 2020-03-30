@@ -11,7 +11,7 @@
     position: absolute;
     width: 60%;
     height: 100%;
-    background-color: #EAEAEA;
+    background-color: #dddcdc;
     z-index: -1;
 }
 .top-5 .image{
@@ -61,8 +61,7 @@
     height: 311px;
     box-sizing: border-box;
     border: 2px red solid;
-    background-color: white;
-    font-family: 'Open Sans Bold';
+    background-color: white;    
     /* padding: 50px 60px 0; */
     display: flex;
     flex-direction: column;
@@ -72,11 +71,13 @@
     box-shadow:  -2px 2px rgba(0, 0, 0, 0.5);
 }
 .top-5 .inner .right-side .custom-card .number{
+    font-family: 'Open Sans Bold';
     text-align: center;
     font-size: 100px;
     margin-top: 10px;
 }
 .top-5 .inner .right-side .custom-card .title{
+    font-family: 'Open Sans Bold';
     text-align: center;
     font-size: 26px;
     margin-top: -25px;
@@ -84,10 +85,9 @@
 }
 .top-5 .inner .right-side .custom-card .text{
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     white-space: normal;
     width: 120px;
-    font-family: 'MinionPro';
 }
 @media (max-width: 576px){
 
@@ -155,7 +155,6 @@
     white-space: normal;
     margin-top: 50px;
     font-size: 16px;
-    font-family: 'MinionPro', sans-serif;
     line-height: 22px;
 }
 .expirience .button{
@@ -200,7 +199,7 @@
     right: 0;
     width: 60%;
     height: 100%;
-    background-color: #EAEAEA;
+    background-color: #dddcdc;
     z-index: -2;
 }
 .types-of-work .gray-bg .image{
@@ -289,7 +288,6 @@
     font-size: 16px;
     white-space: normal;
     width: 250px;
-    font-family: 'MinionPro';
 }
 
 @media (max-width: 991px){
@@ -394,7 +392,6 @@
     font-size: 35px;
     font-family: 'Futura';
     text-transform: uppercase;
-    text-align: center;
     line-height: 40px;
 }
 @media (max-width: 991px){
