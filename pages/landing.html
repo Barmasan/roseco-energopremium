@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+    <!-- bootstrap END -->
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/landing.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</head>
+
+<body>
+    <!-- header and nav -->
+    <header class="header container-fluid">
+        <div class="container h-100">
+            <div class="content h-100 d-flex flex-column flex-md-row justify-content-start align-items-center">
+                <div class="logo"></div>
+                <div class="info ml-md-5 d-flex d-md-block flex-column justify-content-center align-items-center">
+                    <div class="phone"><a href="tel:+7-812-309-9498">+7 (812) 309-94-98</a></div>
+                    <div class="time">Пн-Пт 09-18</div>
+                    <div class="email ml-lg-5 d-block d-lg-none"><a href="mailto:info@enprem.com">info@enprem.com</a>
+                    </div>
+                </div>
+                <div class="email m0 ml-md-5 d-none d-lg-block"><a href="mailto:info@enprem.com">info@enprem.com</a>
+                </div>
+                <button class="button m0 button_bg-red ml-md-auto">Заказать звонок</button>
+                <button class="button ml-md-3">Калькулятор</button>
+
+            </div>
+        </div>
+    </header>
+    <nav class="navigation container-fluid">
+        <div class="container p-0 h-100">
+            <div class="content h-100 d-none d-md-flex justify-content-around align-items-center">
+                <div class="item">
+                    <a href="" class="">главная</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class="">
+                        <div class="triangle"></div>услуги
+                    </a>
+
+                </div>
+                <div class="item active">
+                    <a href="" class="">наши проекты</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class="">отзывы</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class="">новости</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class="">о компании</a>
+
+                </div>
+                <div class="item">
+                    <a href="" class="">контакты</a>
+
+                </div>
+
+            </div>
+            <div class="content h-100 d-flex d-md-none flex-column flex-md-row justify-content-center">
+                <div id="menuToggle">
+
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#">
+                            <li>главная</li>
+                        </a>
+                        <a href="#">
+                            <li>услуги</li>
+                        </a>
+                        <a href="#">
+                            <li>наши проекты</li>
+                        </a>
+                        <a href="#">
+                            <li>отзывы</li>
+                        </a>
+                        <a href="#">
+                            <li>новости</li>
+                        </a>
+                        <a href="#">
+                            <li>о компании</li>
+                        </a>
+                        <a href="#">
+                            <li>контакты</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- first-screen -->
+    <section class="first-screen p-0 container-fluid flex-lg-row-reverse">
+        <div class="text-side"></div>
+        <div class="image-side">
+            <h1 class="h1 d-lg-none d-block">Работы & Проекты</h1>
+        </div>
+        <div class="container inner d-flex flex-column flex-lg-row-reverse h-100">
+            <div class="left-block">
+                <h1 class="h1 d-none d-lg-block">Работы & Проекты</h1>
+                <p class="p">Реализация проектов — процесс трудоемкий и сложный, требующий высокого профессионализма.
+                    Мы гарантируем высокое качество наших работ благодаря комплексному подходу специалистов к
+                    проектированию и монтажу.</p>
+                <button class="button button_bg-red">Заказать</button>
+            </div>
+            <div class="right-block d-flex  justify-content-lg-start align-items-lg-end">
+                <div class="social-media d-flex flex-lg-column">
+                    <a href="" class="icon wu"></a>
+                    <a href="" class="icon tg"></a>
+                    <a href="" class="icon vk"></a>
+                    <a href="" class="icon fb"></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- first-screen END -->
+    <section class="projects">
+        <div class="container inner">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-lg-end">
+                    <div class="block">
+                        <div class="image image-1"></div>
+                        <div class="title">ДС ЛСР Система автоматики ОВ </div>
+                    </div>
+                    <div class="block">
+                        <div class="image image-2"></div>
+                        <div class="title">АО Птицефабрика «Роскар» </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-lg-start">
+                    <div class="block">
+                        <div class="image image-3"></div>
+                        <div class="title">Порт «Бронка» </div>
+                    </div>
+                    <div class="block">
+                        <div class="image image-4"></div>
+                        <div class="title">ЖК «Полюстрово» </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="button button_bg-red">ВСЕ ПРОЕКТЫ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="expirience">
+        <div class="container inner">
+            <div class="row">
+                <div class="col-12">
+                    <p class="p-top"><span class="color-red fs-45px">Опыт наших рабочих</span> позволяет быстро,
+                        качественно, аккуратно произвести монтаж оборудования ТП, при необходимости демонтаж, ремонт,
+                        реконструкцию и замену узлов и соединений. Осуществляем строительство и монтаж ТП 10 0.4 кВ,
+                        КТП, КТПН, монтаж ТП 35 кВ, распределительных пунктов. Для этого<br>
+                        производим следующие работы:
+                    </p>
+                    <p class="p">Компания “ЭнергоПремиум” осуществляет полный цикл работ: строительство подстанций,
+                        реконструкция распределительных и трансформаторных подстанций (ТП), строительство и монтажу БКТП
+                        6, 10 кВ, включая проектирование ЛЭП, электрических сетей напряжением до 10 кВ, монтаж кабельных
+                        линий. Весь список работ представлен на странице услуги.</p>
+                    <p class="p">Квалифицированные специалисты (инженеры, рабочие) нашей энергетической компании
+                        индивидуально подходят к решению каждой конкретной задачи, будь то оформление разрешительной
+                        документации, прокладка кабельных линий в траншеях, электроснабжение зданий или монтаж
+                        электрооборудования. Квалифицированные специалисты (инженеры, рабочие) нашей энергетической
+                        компании индивидуально подходят к решению каждой конкретной задачи, будь то оформление
+                        разрешительной документации, прокладка кабельных линий в траншеях, электроснабжение зданий или
+                        монтаж электрооборудования. Квалифицированные специалисты (инженеры, рабочие) нашей
+                        энергетической компании индивидуально подходят к решению каждой конкретной задачи, будь то
+                        оформление разрешительной документации, прокладка кабельных линий в траншеях, электроснабжение
+                        зданий или монтаж электрооборудования.</p>
+                    <p class="p">Компания “ЭнергоПремиум” осуществляет полный цикл работ: строительство подстанций,
+                        реконструкция распределительных и трансформаторных подстанций (ТП), строительство и монтажу БКТП
+                        6, 10 кВ, включая проектирование ЛЭП, электрических сетей напряжением до 10 кВ, монтаж кабельных
+                        линий. Весь список работ представлен на странице услуги.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container inner d-flex justify-content-center align-items-center flex-wrap">
+            <div class="partner partner-1"></div>
+            <div class="partner partner-2"></div>
+            <div class="partner partner-3"></div>
+            <div class="partner partner-4"></div>
+        </div>
+    </section>
+    <section class="stages-9 p-0 container-fluid">
+        <div class="gray-bg">
+
+        </div>
+        <div class="image"></div>
+        <div class="container d-flex flex-column flex-lg-row-reverse inner h-100">
+            <div class="left-side w-">
+                <h1 class="h1"><span class="color-red">9 Этапов</span><br>Прокладки кабельных линий:</h1>
+            </div>
+            <div class="right-side d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start">
+                <div class="column d-flex flex-column align-items-center align-items-md-start column-1">
+                    <div class="custom-card">
+                        <span class="title">1 этап</span>
+                        <span class="text">
+                            Разрываем траншеи и наполняем дна слоем
+                            ( не менее 100 мм) мелкой земли без камней и
+                            строительного мусора
+                        </span>
+                    </div>
+                    <div class="custom-card">
+                        <span class="title">2 этап</span>
+                        <span class="text">
+                            Доставляем кабеля к месту проведения работ, проводим
+                            предмонтажные
+                            испытания на
+                            электропрочность изоляции на барабане
+                        </span>
+                    </div>
+                    <div class="custom-card">
+                        <span class="title">3 этап</span>
+                        <span class="text">
+                            Раскаткатываем кабеля и наполняем траншею слоем
+                            ( не менее 100 мм) мелкой земли без камней и
+                            строительного мусора
+                        </span>
+                    </div>
+                    <div class="custom-card">
+                        <span class="title">4 этап</span>
+                        <span class="text">
+                            Размещаем кабели
+                            в траншее
+                        </span>
+                    </div>
+
+
+                </div>
+                <div class="column d-flex flex-column align-items-center align-items-md-start column-2">
+                    <div class="custom-card">
+                        <span class="title">5 этап</span>
+                        <span class="text">
+                            Соединяем отдельные участки кабелей
+                        </span>
+                    </div>
+                    <div class="custom-card">
+                        <span class="title">6 этап</span>
+                        <span class="text">
+                            Защищаем кабели от механических
+                            повреждений
+                        </span>
+                    </div>
+                    <div class="custom-card">
+                        <span class="title">7 этап</span>
+                        <span class="text">
+                            Проводим испытание кабелей
+                        </span>
+                    </div>
+                    <div class="custom-card">
+                        <span class="title">8 этап</span>
+                        <span class="text">
+                            Выполняем засыпку траншеи
+                        </span>
+                    </div>
+                    <div class="custom-card">
+                        <span class="title">9 этап</span>
+                        <span class="text">
+                            Проводим концевую заделку кабелей
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="expirience-2">
+        <div class="container inner">
+            <div class="row">
+
+                <div class="col-12">
+                    <h1 class="h1">Опыт наших рабочих</h1>
+                    <p class="p">Компания “ЭнергоПремиум” осуществляет полный цикл работ: строительство подстанций,
+                        реконструкция распределительных и трансформаторных подстанций (ТП), строительство и монтажу БКТП
+                        6, 10 кВ, включая проектирование ЛЭП, электрических сетей напряжением до 10 кВ, монтаж кабельных
+                        линий. Весь список работ представлен на странице <a href="" class="link">услуги</a>.</p>
+                    <p class="p">Квалифицированные специалисты (инженеры, рабочие) нашей энергетической компании
+                        индивидуально подходят к решению каждой конкретной задачи, будь то оформление разрешительной
+                        документации, прокладка кабельных линий в траншеях, электроснабжение зданий или монтаж
+                        электрооборудования. Квалифицированные специалисты (инженеры, рабочие) нашей энергетической
+                        компании индивидуально подходят к решению каждой конкретной задачи, будь то оформление
+                        разрешительной документации, прокладка кабельных линий в траншеях, электроснабжение зданий или
+                        монтаж электрооборудования. Квалифицированные специалисты (инженеры, рабочие) нашей
+                        энергетической компании индивидуально подходят к решению каждой конкретной задачи, будь то
+                        оформление разрешительной документации, прокладка кабельных линий в траншеях, электроснабжение
+                        зданий или монтаж электрооборудования.</p>
+                    <p class="p">Компания “ЭнергоПремиум” осуществляет полный цикл работ: строительство подстанций,
+                        реконструкция распределительных и трансформаторных подстанций (ТП), строительство и монтажу БКТП
+                        6, 10 кВ, включая проектирование ЛЭП, электрических сетей напряжением до 10 кВ, монтаж кабельных
+                        линий. Весь список работ представлен на странице <a href="" class="link">услуги</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="certificates">
+        <div class="container inner d-flex justify-content-center align-items-center flex-wrap">
+            <div class="certificate certificate-1"></div>
+            <div class="certificate certificate-2"></div>
+            <div class="certificate certificate-3"></div>
+            <div class="certificate certificate-4"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid footer-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="block d-flex flex-column align-items-center align-items-md-start">
+                            <div class="title">подстанции:</div>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                        </div>
+                        <div class="block d-flex flex-column align-items-center align-items-md-start">
+                            <div class="title">соглашение:</div>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="block d-flex flex-column align-items-center align-items-md-start">
+                            <div class="title">мощности:</div>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                        </div>
+                        <div class="block d-flex flex-column align-items-center align-items-md-start">
+                            <div class="title">кабельные линии:</div>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                            <a href="" class="link">Ссылка на сайт</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="contacts d-flex flex-column align-items-center align-items-md-start">
+                            <div class="title">Контакты</div>
+                            <address class="text">Адрес<br>
+                                192102, Российская Федерация,<br>
+                                Санкт-Петербург, ул. Фучика д. 4 лит. К,<br> оф. 405
+                            </address>
+                            <p class="text">
+                                Телефон/ факс<br>
+                                <a href="tel:+7-812-309-94-98">+7 812 309 94 98</a>
+                            </p>
+                            <p class="text">
+                                E-mail <br>
+                                <a href="mailto:info@enprem.com">info@enprem.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4 d-flex align-items-end justify-content-center justify-content-md-start">
+                        <div class="social-media d-flex">
+                            <a href="" class="icon wu"></a>
+                            <a href="" class="icon tg"></a>
+                            <a href="" class="icon vk"></a>
+                            <a href="" class="icon fb"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex align-items-end justify-content-center justify-content-md-start">
+                        <p class="bottom-text">2019 ©<span class="fs-25px">Э</span>нерго<span
+                                class="fs-25px">П</span>ремиуим</p>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex align-items-end justify-content-center justify-content-md-start">
+                        <a href="" class="bottom-text"><span class="fs-25px">П</span>олитика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

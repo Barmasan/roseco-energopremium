@@ -437,6 +437,7 @@ span.color-red{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover !important;
 }
 .first-screen .image-side::before{
     content: '';

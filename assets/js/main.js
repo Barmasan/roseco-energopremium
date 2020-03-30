@@ -26,3 +26,20 @@ window.onresize = function(){
         $('.types-of-work').height('1300');
     }
 }
+
+
+console.log($('.stages-9 .right-side').height() + $('.stages-9 .left-side').height());
+
+if(window.innerWidth < 991)
+$('.stages-9').height($('.stages-9 .right-side').height() + $('.stages-9 .left-side').height());
+
+// dev
+window.onresize = function(){
+    
+    if(window.innerWidth < 991){
+        $('.stages-9').height($('.stages-9 .right-side').height() + 450);
+    } else{
+        $('.stages-9').height('1600');
+    }
+}
+// dev
