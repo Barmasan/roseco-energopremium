@@ -31,7 +31,7 @@ window.onresize = function(){
 console.log($('.stages-9 .right-side').height() + $('.stages-9 .left-side').height());
 
 if(window.innerWidth < 991)
-$('.stages-9').height($('.stages-9 .right-side').height() + $('.stages-9 .left-side').height());
+$('.stages-9').height($('.stages-9 .right-side').height() + $('.stages-9 .left-side').height() + 250);
 
 // dev
 window.onresize = function(){

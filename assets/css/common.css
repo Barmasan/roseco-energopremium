@@ -67,10 +67,16 @@ body{
     white-space: nowrap;
     transition:all 1s;
 }
+
+body * {
+    white-space: normal;
+}
 .content {
     width: 100%;
 }
-
+h1, h2, h3{
+    font-family: "Futura";
+}
 /* utility END */
 
 /* reusable */
@@ -513,16 +519,16 @@ span.color-red{
     margin-bottom: 10px;
 }
 .first-screen .social-media .wu{
-    background-image: url(../../assets/img/first-screen/social-media/wu.png);
+    background-image: url(../../assets/img/icons/icons8-whatsapp-100.png);
 }
 .first-screen .social-media .tg{
-    background-image: url(../../assets/img/first-screen/social-media/tg.png);
+    background-image: url(../../assets/img/icons/telegram.png);
 }
 .first-screen .social-media .vk{
-    background-image: url(../../assets/img/first-screen/social-media/vk.png);
+    background-image: url(../../assets/img/icons/icons8-vk.com-100.png);
 }
 .first-screen .social-media .fb{
-    background-image: url(../../assets/img/first-screen/social-media/fb.png);
+    background-image: url(../../assets/img/icons/icons8-facebook-old-100.png);
 }
 
 @media (max-width: 991px){
@@ -569,6 +575,18 @@ span.color-red{
     }
     .first-screen .social-media .icon:not(:last-child){
         margin-right: 30px;
+    }
+    .first-screen .social-media .wu{
+        background-image: url(../../assets/img/first-screen/social-media/wu.png);
+    }
+    .first-screen .social-media .tg{
+        background-image: url(../../assets/img/first-screen/social-media/tg.png);
+    }
+    .first-screen .social-media .vk{
+        background-image: url(../../assets/img/first-screen/social-media/vk.png);
+    }
+    .first-screen .social-media .fb{
+        background-image: url(../../assets/img/first-screen/social-media/fb.png);
     }
 }
 @media (max-width: 576px){
