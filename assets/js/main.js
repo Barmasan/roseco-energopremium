@@ -1,4 +1,22 @@
 
+$('.navigation .item, .dropdown__content').hover(function(){
+    $('.dropdown__content', this).css('display', 'block');
+}, function(){
+    $('.dropdown__content', this).css('display', 'none');
+})
+
+$('.navigation .dropdown__item').hover(function(){
+    console.log(1);
+    $('.sub-dropdown__content', this).css('display', 'block');
+}, function(){
+    $('.sub-dropdown__content', this).css('display', 'none');
+})
+
+
+
+
+
+/* height of card blocks */
 if(window.innerWidth < 991)
 $('.top-5').height($('.top-5 .right-side').height() + $('.top-5 .left-side').height());
 
@@ -42,4 +60,4 @@ window.onresize = function(){
         $('.stages-9').height('1600');
     }
 }
-// dev
+/* height of card blocks END */
