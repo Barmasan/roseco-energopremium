@@ -1,10 +1,10 @@
 /* @font-face {
 	font-family: "CUSTOM";
-	src: url('Futura_Condensed.eot');
-    src: url('Futura_Condensed.eot') format('embedded-opentype'),
-         url('Futura_Condensed.woff') format('woff'),
-         url('Futura_Condensed.ttf') format('truetype'),
-         url('Futura_Condensed.svg#Futura_Condensed') format('svg');
+	src: url('/assets/app/fonts/Futura_Condensed.eot');
+    src: url('/assets/app/fonts/Futura_Condensed.eot') format('embedded-opentype'),
+         url('/assets/app/fonts/Futura_Condensed.woff') format('woff'),
+         url('/assets/app/fonts/Futura_Condensed.ttf') format('truetype'),
+         url('/assets/app/fonts/Futura_Condensed.svg#Futura_Condensed') format('svg');
 }
 
 h1 {

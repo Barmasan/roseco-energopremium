@@ -130,7 +130,98 @@
         </div>
     </nav>
     <!-- first-screen -->
-    <section class="first-screen p-0 container-fluid">
+    <style>
+        #maxim h1{
+            margin-top: 75px;
+            max-width: 300px;
+            font-size: 54px;
+            font-family: 'Futura', sans-serif;
+            color: red!important;
+            white-space: normal;
+            line-height: 50px;
+        }
+       #maxim p{
+            text-transform: uppercase;
+            margin-top: 35px;
+            max-width: 471px;
+            font-size: 20px;
+            font-family: 'Futura', sans-serif;
+            white-space: normal;
+            line-height: 35px;
+        }
+        #maxim img{
+            position: absolute;
+            width: 100%;
+            height:100%;
+            top: 0;
+            right: 0;
+            -webkit-clip-path: polygon(0 107%, 20% 0, 100% 0, 100% 100%);
+            clip-path: polygon(0 107%, 20% 0, 100% 0, 100% 100%);
+        }
+        .first-col{
+            padding-left:10%;
+        }
+        #maxim button{
+            margin-top: 37px;
+            font-size: 26px;
+            padding: 0px 112px;
+            margin-bottom: 30px;
+        }
+        #maxim .button_bg-red{
+            background-color: red;
+            color: white;
+            border: 1px red solid;
+        }
+        .bg-mode{
+            background: url(../assets/img/main/first-screen/TP-ENERGOPREMIUM.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #maxim .next-col::after{
+            content: '';
+            display: inline-block;
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            -webkit-clip-path: polygon(0 107%, 20% 0, 20.5% 0, 1.8% 100%);
+            clip-path: polygon(0 107%, 20% 0, 20.5% 0, 1.8% 100%);
+            z-index: 2;
+        }
+        @media (max-width: 1000px){
+            #maxim .next-col::after{
+                content: unset;
+            }
+            #maxim img{
+                position: unset;
+                -webkit-clip-path: none;
+            clip-path: none;
+            }
+            #maxim .col-md-6{
+                flex:unset;
+                max-width: unset;
+            }
+        }
+    </style>
+    <section id="maxim" class="pb-3">
+        <div class="row" style="border: 2px solid black;margin-left: unset;margin-right: unset;">
+            <div class="col-md-6 first-col">
+                <div class="left-block">
+                    <h1 class="">Строительство трансформаторных подстанций</h1>
+                    <p class="p">- строительство и реконструкция подстанций и линейных объектов<br>
+                        - напряжением от 0,4 кВ до 110 кВ. <br>
+                        - проектирование и монтаж внутренних и наружных систем<br>
+                        энергоснабжения производственных и общественно-деловых зданий.</p>
+                    <button class="button button_bg-red">Заказать</button>
+                </div>
+            </div>
+            <div class="col-md-6 next-col" style="padding-right: unset;padding-left: unset;">
+                <img src="../assets/img/main/first-screen/TP-ENERGOPREMIUM.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- <section class="first-screen p-0 container-fluid">
         <div class="text-side"></div>
         <div class="image-side">
             <span class="h1 d-lg-none d-block">Строительство трансформаторных подстанций</span>
@@ -154,7 +245,7 @@
             </div>
             
         </div>
-    </section>
+    </section> -->
     <!-- first-screen END -->
     <section class="top-5 p-0 container-fluid">
         <div class="gray-bg">
@@ -474,6 +565,16 @@
     </footer>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/map.js"></script>
+    <script>
+        if($(window).innerWidth()< 1000){
+            $('#maxim .row').addClass('bg-mode')
+            $('.next-col').remove()
+            $('.first-col').css({
+                'background-color': 'white',
+                opacity: 0.8
+            })
+        }
+    </script>
 </body>
 
 </html>
