@@ -1,16 +1,42 @@
 
-$('.navigation .item, .dropdown__content').hover(function(){
-    $('.dropdown__content', this).css('display', 'block');
+$('.navigation > .container > ul > li, .navigation > .container > ul > li > ul').hover(function(){
+    $(' .navigation > .container > ul > li > ul', this).css('display', 'block');
 }, function(){
-    $('.dropdown__content', this).css('display', 'none');
+    $(' .navigation > .container > ul > li > ul', this).css('display', 'none');
 })
 
-$('.navigation .dropdown__item').hover(function(){
+$('.navigation > .container > ul > li > ul > li').hover(function(){
     console.log(1);
-    $('.sub-dropdown__content', this).css('display', 'block');
+    $('.navigation > .container > ul > li > ul > li > ul', this).css('display', 'block');
 }, function(){
-    $('.sub-dropdown__content', this).css('display', 'none');
+    $('.navigation > .container > ul > li > ul > li > ul', this).css('display', 'none');
 })
+
+/* mobile menu */
+$(".mobile_menu").simpleMobileMenu();
+
+/* $(".mobile_menu").slideMobileMenu({
+
+    // Hamburger Id
+    "hamburgerId"   : "sm_menu_ham", 
+  
+    // Menu Wrapper Class
+    "wrapperClass"  : "sm_menu_outer", 
+  
+    // Submenu Class
+    "submenuClass"  : "submenu", 
+  
+    // or 'accordion'
+    "menuStyle": "slide",
+  
+    // Calls when menu loaded
+    "onMenuLoad"    : function() { return true; }, 
+  
+    // Calls when menu open/close
+    "onMenuToggle"  : function() { return true; } 
+    
+  }); */
+/* mobile menu END */
 
 
 

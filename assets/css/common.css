@@ -236,7 +236,7 @@ span.color-red{
     cursor: pointer;
     color: #0f0f0f;
 }
-.navigation .dropdown__content {
+.navigation .item > ul {
     top: 45px;
     transition: 3s;
     width: 332px;
@@ -248,8 +248,10 @@ span.color-red{
     border: 1px solid #f24841;
     background-color: #f6f7f9;
     opacity: 0.95;
+    list-style: none;
+    padding-left: 0;
 }
-.navigation .dropdown__content .dropdown__content-button {
+.navigation .item > ul > li > a {
     position: relative;
     display: block;
     width: 100%;
@@ -262,11 +264,11 @@ span.color-red{
     cursor: pointer;
     font-size: 20px;
 }
-.navigation .dropdown__content .dropdown__content-button:hover {
+.navigation .item > ul > li > a:hover {
     background-color: #f24841;
     color: white;
 }
-.navigation .sub-dropdown__content{
+.navigation .item > ul > li > ul {
     top: 9px;
     left: 330px;
     transition: 3s;
@@ -279,8 +281,10 @@ span.color-red{
     border: 1px solid #f24841;
     background-color: #f6f7f9;
     opacity: 0.95;  
+    list-style: none;
+    padding-left: 0;
 }
-.navigation .sub-dropdown__content-button{
+.navigation .item > ul > li > ul > li{
     display: block;
     width: 100%;
     height: 50px;
@@ -292,7 +296,7 @@ span.color-red{
     cursor: pointer;
     font-size: 20px;
 }
-.navigation .dropdown__content .sub-dropdown__content-button:hover {
+.navigation .item > ul > li > ul > li:hover {
     background-color: #f24841;
     color: white;
 }
@@ -328,162 +332,39 @@ span.color-red{
 .navigation .active{
     border-bottom: 7px red solid;
 }
-
-
-#menuToggle
-{
-    width: 100%;
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: 50px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 9; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-    position: absolute;
-    left: 50px;
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  
-  z-index: 8;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  top: -70px;
-  left: 0;
-  width: 100%;
-  padding: 50px;
-  padding-top: 125px;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(0, -200%);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  z-index: 7;
-
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: 'Futura Condensed', sans-serif;
-  color: black;
-
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-
-@media (max-width: 991px){
-
-                         
+@media (max-width: 768px){
+    .navigation {
+        display: none;
+    }
 }
 /* header END */
+
+/* mobile menu rewrite */
+#sm_menu_ham {
+    position: absolute;
+    display: none;
+    float: left !important;
+    left: 15px !important;
+}
+#sm_menu_ham span{
+    background-color: red;
+}
+.sm_menu_outer .mobile_menu a {
+    font-family: 'Futura', sans-serif;
+    color: black;
+}
+.sm_menu_outer {
+    background: #E9E9E9;
+}
+.sm_menu_outer.slide .mobile_menu .submenu {
+    background: #E9E9E9;
+}
+@media (max-width: 768px){
+    #sm_menu_ham {
+        display: block;
+    }
+}
+/* mobile menu rewrite END */
 
 /* first-screen */
 .first-screen{
